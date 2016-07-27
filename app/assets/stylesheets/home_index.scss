@@ -1,0 +1,247 @@
+// * {
+//   border-style: dotted;
+//   border-width: 3px;
+//   border-color: white;
+// }
+
+
+// LINKS
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+
+.background-imager {
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+// TOP BAR CSS
+.top-bar {
+  height: 50px;
+  background-color: gray;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.8;
+  text-align: center;
+}
+
+
+.top-bar-list {
+  list-style: none;
+  margin-top: 15px;
+  margin-left: -2.5%;
+  align-content: center;
+  color: white;
+}
+
+.top-bar-link {
+  font-family: "Architects Daughter";
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: white;
+  font-size: 15px;
+}
+
+// BOTTOM BAR CSS
+
+.bottom-bar {
+  height: 50px;
+  background-color: black;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.bottom-bar-list-right {
+  list-style: none;
+  margin-top: 15px;
+  margin-left: -2.5%;
+  align-content: center;
+  color: white;
+}
+
+.bottom-bar-link {
+  font-family: "Architects Daughter";
+  display: inline-block;
+  margin-left: 35px;
+  margin-right: 35px;
+  color: white;
+  font-size: 25px;
+}
+
+
+.box {
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+}
+
+
+
+@media (max-width: 900px) {
+  .welcome-message {
+    font-family: "Walter Turncoat";
+    margin-top: 30vh;
+    font-size: 10vw !important;
+    color: white;
+  }
+
+  .profile-pic {
+    width: 80%;
+    height: 50%;
+    margin-top: 5%;
+    border-radius: 100%;
+  }
+
+  .bottom-bar-link {
+    font-family: "Architects Daughter";
+    display: inline-block;
+    margin-left: 11px;
+    margin-right: 11px;
+    color: white;
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .bottom-bar-link {
+    display: inline-block;
+    color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 3vw;
+
+  }
+
+  .top-bar-link {
+    font-family: "Architects Daughter";
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+    font-size: 11px;
+  }
+
+  .welcome-message {
+    font-family: "Walter Turncoat";
+    margin-top: 30vh;
+    font-size: 10vw;
+    color: white;
+  }
+}
+
+
+
+
+.view-max-height {
+    height: 100vh;
+}
+
+
+.row-flex {
+  display: flex;
+}
+
+.intro-row {
+  background-image: url(asset-path('sheep.JPG'));
+
+}
+
+.code {
+  background-image: url(asset-path('code.JPG'));
+}
+
+.travel {
+  background-image: url(asset-path('travel.jpg'));
+}
+
+.thoughts {
+  background-image: url(asset-path('turtle.jpg'));
+}
+
+.photography {
+  background-image: url(asset-path('sheep.JPG'));
+}
+
+.contact {
+  background-image: url(asset-path('desert.jpg'));
+}
+
+.profile-pic {
+  width: 80%;
+  height: 50%;
+  margin-top: 5%;
+  border-radius: 100%;
+  // border: solid #000;
+  // border-width: 3 3px;
+}
+
+.profile-pic-column {
+  height: 100%;
+  align-content: center;
+
+}
+
+.welcome-message-column {
+  align-content: center;
+  text-align: center;
+}
+
+.welcome-message {
+  font-family: "Walter Turncoat";
+  margin-top: 30vh;
+  font-size: 6vw;
+  color: white;
+}
+
+.twitter-button {
+  background-image: url(asset-path('Twitter_Logo_White_On_Image.png'));
+  float: right;
+  height: 50px;
+  width: 50px;
+}
+
+.samurai-container {
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: relative;
+}
+.samurai {
+  background-image: url(asset-path('Samurai.png'));
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  bottom: 50px;
+}
