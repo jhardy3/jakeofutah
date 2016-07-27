@@ -7,6 +7,8 @@ gem 'bootstrap-sass'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'twitter'
+gem "paperclip", "~> 5.0.0"
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

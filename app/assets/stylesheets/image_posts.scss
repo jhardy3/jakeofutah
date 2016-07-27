@@ -1,0 +1,45 @@
+// Place all the styles related to the image_posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.height-50 {
+  height: 50px;
+}
+
+.image-attributes {
+  margin-top: 20px;
+  // height: 80vh;
+  width: 65vw;
+}
+
+@media (max-width: 900px) {
+  .image-attributes {
+    margin-top: 20px;
+    // height: 80vh;
+    width: 98vw;
+  }
+
+}
+
+.top-bar-image {
+  height: 50px;
+  background-color: gray;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 1;
+  text-align: center;
+}
+
+.top-bar-title {
+  color: white;
+  font-size: 30px;
+}
+
+.black-background {
+  background-color: black;
+  text-align: center;
+}

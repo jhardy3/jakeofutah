@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link  rel = "stylesheet"  href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%= stylesheet_link_tag 'home_index' %>
+    <title></title>
+  </head>
+  <body class="black-background">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="top-bar-image">
+          <ul class="top-bar-list">
+            <li class="top-bar-title"> <%= @image_post.title.upcase %> </li>
+          </ul>
+        </div>
+        <div class="height-50">
+
+        </div>
+
+      </div>
+      <div class="row">
+        <td><%= image_tag @image_post.image.url, :class => "background-imager image-attributes" %></td>
+        <p>
+          <strong>Description:</strong>
+          <%= @image_post.description %>
+        </p>
+      </div>
+      <p id="notice"><%= notice %></p>
+    </div>
+    <%= link_to 'Edit', edit_image_post_path(@image_post) %> |
+    <%= link_to 'Back', image_posts_path %>
+
+  </body>
+</html>

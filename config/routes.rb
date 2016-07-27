@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :image_posts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root :to => 'home#index'
@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/tutorials', :to => 'tutorial#index'
   get '/mana', :to => 'mana#index'
   get '/photography', :to => 'photography#index'
-  get '/contact', :to => 'contact#show'
+  get '/contact', :to => 'home#contact'
+  get '/image_posts', :to => 'image_posts_controller#index'
 
 end
