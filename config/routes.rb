@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get '/mana', :to => 'mana#index'
   get '/photography', :to => 'photography#index'
   get '/contact', :to => 'home#contact'
-  get '/image_posts', :to => 'image_posts_controller#index'
+  get '/image_posts', :to => 'image_posts#index'
+  get '/image_posts_consume', :to => 'image_posts#consume'
+
+  get '/authenticate', :to => 'image_posts#authenticate'
+  post '/authenticate', :to => 'image_posts#authenticate'
 
 end

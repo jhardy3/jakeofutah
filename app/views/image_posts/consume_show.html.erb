@@ -19,16 +19,14 @@
 
       </div>
       <div class="row">
-        <td> <%= image_tag @image_post.image.url, :class => "background-imager image-attributes" %></td>
+        <td><%= image_tag @image_post.image.url, :class => "background-imager image-attributes" %></td>
         <p>
           <strong>Description:</strong>
           <%= @image_post.description %>
         </p>
+        <%= link_to 'Back', '/image_posts_consume' %>
       </div>
       <p id="notice"><%= notice %></p>
     </div>
-    <%= link_to 'Edit', edit_image_post_path(@image_post) %> |
-    <%= link_to 'Back', image_posts_path %>
-
   </body>
 </html>

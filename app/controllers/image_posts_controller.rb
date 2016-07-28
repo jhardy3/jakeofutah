@@ -4,21 +4,55 @@ class ImagePostsController < ApplicationController
   # GET /image_posts
   # GET /image_posts.json
   def index
-    @image_posts = ImagePost.all
+    if (session[:authenticated] == true)
+      @image_posts = ImagePost.all
+      render 'index'
+    else
+      redirect_to '/authenticate'
+    end
   end
 
   # GET /image_posts/1
   # GET /image_posts/1.json
   def show
+    if (session[:authenticated] == true)
+
+    else
+      render 'consume_show'
+    end
+  end
+
+  def consume
+    @image_posts = ImagePost.all
+    render 'consume'
+  end
+
+  def authenticate
+    pass = params[:paz]
+    if (pass == "Mdkhfyg9v26h4m")
+      session[:authenticated] = true
+      redirect_to '/image_posts'
+    else
+      session[:authenticated] = false
+    end
   end
 
   # GET /image_posts/new
   def new
-    @image_post = ImagePost.new
+    if (session[:authenticated] == true)
+      @image_post = ImagePost.new
+    else
+      redirect_to '/authenticate'
+    end
   end
 
   # GET /image_posts/1/edit
   def edit
+    if (session[:authenticated] == true)
+
+    else
+      redirect_to '/authenticate'
+    end
   end
 
   # POST /image_posts

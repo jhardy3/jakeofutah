@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <%= stylesheet_link_tag 'home_index' %>
+    <%= stylesheet_link_tag 'consume' %>
+    <link  rel = "stylesheet"  href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+    <title></title>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="top-bar">
+          <div class="twitter-button background-imager">
+
+          </div>
+          <ul class="top-bar-list">
+            <li class="top-bar-link"><a href="/">Home</a></li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+      <div class="row center">
+        <p id="notice"><%= notice %></p>
+        <div class="col-md-12">
+
+
+          <h1 class="title-consume">La Galería</h1>
+            <% @image_posts.each do |image_post| %>
+            <%= link_to image_post do %>
+              <%= image_tag image_post.image.url, :class => "background-imager image-attributes-consume img-rounded" %>
+            <% end %>
+
+                <!-- <%= link_to (image_tag(image_post.image.url)), image_post, :class => "background-imager image-attributes-consume" %> -->
+                <!-- <%= link_to 'Show', image_post %> -->
+
+            <% end %>
+          <br>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

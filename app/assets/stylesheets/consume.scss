@@ -1,0 +1,33 @@
+.center {
+  text-align: center;
+}
+
+.image-attributes-consume {
+  width: 30vw;
+  margin-left: 0;
+  margin-bottom: 3px;
+}
+
+.title-consume {
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  font-family: "Walter Turncoat";
+  font-size: 6vw;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .image-attributes-consume {
+    width: 45vw;
+    margin-left: 0;
+    margin-bottom: 3px;
+  }
+}
+@media (max-width: 600px) {
+  .image-attributes-consume {
+    width: 90vw;
+    margin-bottom: 3px;
+  }
+
+}

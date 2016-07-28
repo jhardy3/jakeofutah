@@ -24,7 +24,7 @@
 
 .top-bar-image {
   height: 50px;
-  background-color: gray;
+  background-color: black;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -35,6 +35,7 @@
 }
 
 .top-bar-title {
+  font-family: "Walter Turncoat";
   color: white;
   font-size: 30px;
 }
