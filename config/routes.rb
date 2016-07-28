@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   get '/authenticate', :to => 'image_posts#authenticate'
   post '/authenticate', :to => 'image_posts#authenticate'
 
+
+  get '/portfolio', :to => 'portfolio#show'
 end
