@@ -29,7 +29,7 @@ class ImagePostsController < ApplicationController
 
   def authenticate
     pass = params[:paz]
-    if (pass == "Mdkhfyg9v26h4m")
+    if (pass == "Mmw6dvjpf2")
       session[:authenticated] = true
       redirect_to '/image_posts'
     else
